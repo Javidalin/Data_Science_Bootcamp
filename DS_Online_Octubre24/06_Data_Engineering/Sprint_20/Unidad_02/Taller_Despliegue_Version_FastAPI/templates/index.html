@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advertising Model API</title>
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text x=%221%22 y=%2219%22 font-size=%2224%22>💲</text></svg>">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Advertising Model API</h1>
+        <p>This API provides predictions for sales based on advertising budgets.</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <h3>GET /api/v1/predict</h3>
+            <p>Predicts sales based on advertising budgets.</p>
+            <p><strong>Parameters:</strong></p>
+            <ul>
+                <li><code>tv</code> - TV advertising budget</li>
+                <li><code>radio</code> - Radio advertising budget</li>
+                <li><code>newspaper</code> - Newspaper advertising budget</li>
+            </ul>
+            <p><strong>Example:</strong> <code>/api/v1/predict?tv=100&radio=20&newspaper=30</code></p>
+        </div>
+        
+        <div class="endpoint">
+            <h3>GET /api/v1/retrain</h3>
+            <p>Retrains the model using new data.</p>
+            <p><strong>Note:</strong> Requires updated data in data/Advertising_new.csv</p>
+        </div>
+        
+        <a href="/docs" class="docs-link">Interactive API Documentation</a>
+    </body>
+</html>
